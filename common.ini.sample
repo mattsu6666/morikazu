@@ -1,0 +1,10 @@
+[common]
+guile_id=your_id
+guile_pass=your_password
+
+[guile_master_db]
+host=localhost
+db=guile_master_db
+port=3306
+user=root
+pass=root
