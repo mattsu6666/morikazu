@@ -2,6 +2,8 @@
 guile_id=your_id
 guile_pass=your_password
 
+mail_address=you@microad.co.jp
+
 [guile_master_db]
 host=localhost
 db=guile_master_db

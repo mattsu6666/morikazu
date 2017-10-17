@@ -3,6 +3,12 @@ from datetime import datetime as dt
 
 
 def get_SID(user_id, password):
+    """
+    GUILEサイトにログインし, セッションを取得し返す
+    :param user_id:
+    :param password:
+    :return: セッション
+    """
     url = 'https://mypage.guile.jp/login'
     payload = f'login_id={user_id}&' \
               f'login_pass={password}'
@@ -19,6 +25,13 @@ def get_SID(user_id, password):
 
 
 def get_ad_page(sid, campaign_id, ad_id):
+    """
+    campaign_id x ad_idのHTMLページを取得し返す
+    :param sid:
+    :param campaign_id:
+    :param ad_id:
+    :return: HTMLページ
+    """
     today = dt.now().strftime('%Y-%m-%d')
     url = f'https://mypage.guile.jp/report/detail/{ad_id}?' \
           f'period_start={today}&' \
